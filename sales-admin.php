@@ -51,8 +51,8 @@ include 'connection.php';
                         <div class="px-6 flex">
                             <?php
                              error_reporting(E_ERROR | E_PARSE);
-                             $st2=$_GET['id']-1;
-                             $k="SELECT * from sales where id='$st2'";
+                             $d=date('Y-m-d',strtotime('yesterday'));
+                             $k="SELECT * from sales where date='$d'";
                              $z=mysqli_query($conn,$k);
                              $zr=mysqli_fetch_array($z);
                              $sh=$zr['netclosing'];
