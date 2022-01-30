@@ -9,7 +9,7 @@ $state=$_POST['State'];
 $Password=$_POST['password'];
 $password_enc=password_hash($Password,PASSWORD_BCRYPT);
 
-$query="INSERT INTO registration2(`Name`,`Email`,`Phone`,`Address`,`City`,`State`,`password`) VALUES('$name','$email_id','$phone',$address,'$city','$state','$password_enc')";
+$query="INSERT INTO registration(`Name`,`Email`,`Phone`,`Address`,`City`,`State`,`password`) VALUES('$name','$email_id','$phone',$address,'$city','$state','$Password')";
 $r=mysqli_query($conn,$query);
 
 if($r==1)

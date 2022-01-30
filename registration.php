@@ -14,7 +14,7 @@
     <title>Registration Form</title>
   </head>
   <body>
-  <form action="registration-connect2.php" method="POST">
+  <form action="registration-connect2.php" method="post">
       <div style="width:50%; margin:auto; position:center; margin-top:10%;">
                             <div class="mt-3 px-3"> <input class="form-control" placeholder="Name" name="Name" required> </div>
                             <div class="mt-3 px-3"> <input class="form-control" type="email" placeholder="Email" name="Email" required> </div>
