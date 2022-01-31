@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+$conn=mysqli_connect('localhost','root','','ccjitterss');
 $a=$_POST['open'];
 $b=date('Y/m/d',strtotime($_POST['date']));
 $c=$_POST['bill'];

@@ -15,7 +15,8 @@ include 'connection.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/sales-style.css">
-    <title>Employee</title>
+    <link rel="stylesheet"  media="screen and (max-width:902px)" href="css/mobile.css">
+    <title>Employee Sales</title>
   </head>
   <body>
 
@@ -49,8 +50,8 @@ include 'connection.php';
                         <div class="px-6 flex">
                             <?php
                              error_reporting(E_ERROR | E_PARSE);
-                             $st2=$_GET['id']-1;
-                             $k="SELECT * from sales where id='$st2'";
+                            $d=date('Y-m-d',strtotime('yesterday'));
+                             $k="SELECT * from sales where date='$d'";
                              $z=mysqli_query($conn,$k);
                              $zr=mysqli_fetch_array($z);
                              $sh=$zr['netclosing'];

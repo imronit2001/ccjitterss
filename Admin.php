@@ -2,10 +2,13 @@
 $conn=mysqli_connect('localhost','root','','ccjitterss');
 $q="SELECT COUNT(*) from sales";
 $m2="SELECT COUNT(*) from message";
+$m3="SELECT COUNT(*) from feedback";
 $x=mysqli_query($conn,$q);
 $x2=mysqli_query($conn,$m2);
+$x3=mysqli_query($conn,$m3);
 $r=mysqli_fetch_array($x);
 $r2=mysqli_fetch_array($x2);
+$r3=mysqli_fetch_array($x3);
 $y=(int)(((int)$r[0]/30)*100);
 ?>
 <!doctype html>
@@ -56,8 +59,8 @@ $y=(int)(((int)$r[0]/30)*100);
                     </div>
                     <div class="card cardchild mt-3 p-2 px-3 py-3">
                         <div class="d-flex p-2 mt-2 justify-content-between rounded">
-                            <div class="d-flex flex-column"><a href="salesreport.php"style="color:black; text-decoration:none;"><span class="type">Feedback<br></span><span class="number">120</span></a></div>
-                            <div class="d-flex flex-column"><img src="https://i.imgur.com/7SEdq7z.png" class="logo2" height="40" width="40" /><span class="percentage2"><?php echo $y?>%</span></div>
+                            <div class="d-flex flex-column"><a href="feedback-view.php"style="color:black; text-decoration:none;"><span class="type">Feedback<br></span><span class="number"><?php echo $r3[0] ?></span></a></div>
+                            <div class="d-flex flex-column"><img src="https://i.imgur.com/7SEdq7z.png" class="logo2" height="40" width="40" /><span class="percentage2"></span></div>
                           </div>
                     </div>
                     <div class="card cardchild mt-3 p-2 px-3 py-3">

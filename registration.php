@@ -8,10 +8,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/registration.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
-    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js">
     <title>Registration Form</title>
+<<<<<<< HEAD
     <link rel="shortcut icon" type="image/jpg" href="img/ccjitterssblack.png"/>
 </head>
 <body>
@@ -46,6 +47,24 @@
             <!-- <input class="btn btn-primary mb-3" type="submit" value="Submit"> -->
         </form>
 </div>
+=======
+  </head>
+  <body>
+  <form action="registration-connect2.php" method="post">
+      <div style="width:50%; margin:auto; position:center; margin-top:10%;">
+                            <div class="mt-3 px-3"> <input class="form-control" placeholder="Name" name="Name" required> </div>
+                            <div class="mt-3 px-3"> <input class="form-control" type="email" placeholder="Email" name="Email" required> </div>
+                            <div class="mt-3 px-3"> <input class="form-control" type="text" placeholder="Phone" name="Phone" required> </div>
+                            <div class="mt-3 px-3"> <input class="form-control" type="text" placeholder="Address" name="Address" required> </div>
+                            <div class="mt-3 px-3"> <input class="form-control" type="text" placeholder="City" name="City" required> </div>
+                            <div class="mt-3 px-3"> <input class="form-control" type="text" placeholder="State" name="State" required> </div>
+                            <div class="mt-3 px-3"> <input class="form-control" type="password" placeholder="Password" name="password" required> </div>
+                            <div class="mt-3 d-grid px-3"> <button type="submit"
+                                    class="btn btn-primary btn-block btn-signup text-uppercase"> <span>Register</span>
+                                </button> </div>
+                </div>
+                            </form>
+>>>>>>> 28ded53b294faa6b0524fc77ee46b1c7acacf95e
 
     <!-- Optional JavaScript; choose one of the two! -->
 
