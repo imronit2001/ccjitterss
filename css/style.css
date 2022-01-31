@@ -4,6 +4,7 @@ body{
 header{
 
     height:1400px;
+    width:100%;
     background-image:linear-gradient(to right, rgba(255,0,0,0), rgb(46, 45, 45)),url('../img/food.jpg');
     background-repeat: no-repeat;
     background-size: cover;

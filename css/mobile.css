@@ -2,7 +2,7 @@
 header{
 
     height:100px;
-    width: auto;
+    width:100%;
     background-image:linear-gradient(to right, rgba(255,0,0,0), rgb(34, 34, 34)),url('../img/food.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,9 @@ header{
     margin-bottom: 20px;
     
    
+}
+.tx{
+    font-size:10%;
 }
 .OD
 {
