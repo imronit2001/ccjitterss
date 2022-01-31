@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,40 +12,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <title>Registration Form</title>
-  </head>
-  <body>
+    <link rel="shortcut icon" type="image/jpg" href="img/ccjitterssblack.png"/>
+</head>
+<body>
     <div class="wrapper">
-
         <div class="h5 font-weight-bold text-center mb-3">Registration @ CC JITTERSS</div>
-        <form action="registration-connect.php" method="post">
-        <div class="form-group d-flex align-items-center">
-            <div class="icon"><span class="far fa-user"></span></div> <input autocomplete="off" type="text" name="Name" class="form-control" placeholder="Name" required>
-        </div>
-        <div class="form-group d-flex align-items-center">
-            <div class="icon"><span class="far fa-envelope"></span></div> <input autocomplete="off" name="Email" type="email" class="form-control" placeholder="Email" required>
-        </div>
-        <div class="form-group d-flex align-items-center">
-            <div class="icon"><span class="fas fa-phone"></span></div> <input autocomplete="off" type="text" name="Phone" class="form-control" placeholder="Phone" required>
-        </div>
-       
-        <div class="form-group d-flex align-items-center">
-            <div class="icon"><span class="fas fa-map-marker-alt"></span></div> <input  name="Address" type="text" class="form-control" placeholder="Address" required>
-        </div>
-        <div class="form-group d-flex align-items-center">
-            <div class="icon"><span class="fas fa-map-marker-alt"></span></div> <input  name="City" type="text" class="form-control" placeholder="City" required>
-        </div>
-        <div class="form-group d-flex align-items-center">
-            <div class="icon"><span class="fas fa-map-marker-alt"></span></div> <input  name="State" type="text" class="form-control" placeholder="State" required>
-        </div>
-        <div class="form-group d-flex align-items-center">
-            <div class="icon"><span class="fas fa-key"></span></div> <input  type="password" name="password" class="form-control" placeholder="Password" required>
-            <div class="icon btn"><span class="fas fa-eye-slash"></span></div>
-        </div>
-        <div class="mb-2"> <label class="option">Remember me <input type="checkbox" checked> <span class="checkmark"></span> </label> </div>
-        <button class="btn btn-primary mb-3" type="submit">Signup</button>
-       
-        
-    </form>
+        <form action="registration-connect.php" method="post" enctype="multipart/form-data">
+            <div class="form-group d-flex align-items-center">
+                <input type="text" name="Name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <input type="email" name="Email" class="form-control" placeholder="Email" >
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <input type="text" name="Phone" class="form-control" placeholder="Phone" required>
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <input type="text" name="Address" class="form-control" placeholder="Address" required>
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <input type="text" name="City" class="form-control" placeholder="City" required>
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <input type="text" name="State" class="form-control" placeholder="State" required>
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <input type="file" name="photo1" class="form-control" >
+            </div>
+            <input type="submit" value="Submit">
+            <!-- <input class="btn btn-primary mb-3" type="submit" value="Submit"> -->
+        </form>
 </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

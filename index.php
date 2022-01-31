@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" media="screen and (max-width:902px)" href="css/mobile.css">
-    <link rel="shortcut icon" type="image/jpg" href="img/ccjitterss logo.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="img/ccjitterssblack.png"/>
     <link rel="stylesheet" href="css/style.css">
     <title>CCJITTERSS</title>
 
