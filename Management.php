@@ -1,3 +1,7 @@
+<?php 
+session_start();
+include('session_check.php');
+?>
 <!doctype html>
 <?php 
 $conn=mysqli_connect('localhost','root','','ccjitterss');

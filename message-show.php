@@ -1,3 +1,7 @@
+<?php 
+session_start();
+include('session_check.php');
+?>
 <?php
 $conn=mysqli_connect('localhost','root','','ccjitterss');
 $q="select * from message";

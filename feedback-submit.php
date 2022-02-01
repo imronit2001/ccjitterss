@@ -1,3 +1,7 @@
+<?php 
+session_start();
+include('session_check.php');
+?>
 <?php
 include 'connection.php';
 $id=['id'];

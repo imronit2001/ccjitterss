@@ -1,3 +1,7 @@
+<?php 
+session_start();
+include('session_check.php');
+?>
 <!DOCTYPE HTML>
 <!--
 	Spectral by HTML5 UP
@@ -22,18 +26,19 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						
-						<h1><a href="index.html">CC JITTERSS</a></h1>
+						<h1><a href="welcome2.html">CC JITTERSS</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Food Ordering</a></li>
-											<li><a href="elements.html">Menus</a></li>
-											<li><a href="#">About Us</a></li>
-											<li><a href="#">Services</a></li>
+											<li><a href="welcome2.php">Home</a></li>
+											<li><a href="#">Food Ordering</a></li>
+											<li><a href="upd/CCJITTERSS MENU BOOK (2).pdf" DOWNLOAD="CCJITTERSS MENU BOOK">Menus</a></li>
+											<li><a href="feedback.php">Feedback/Complain</a></li>
+											<li><a href="customer-profile.php">Profile Settings</a></li>
+                                            <li><a href="logout.php">Logout</a></li>
 										</ul>
 									</div>
 								</li>
@@ -49,8 +54,8 @@
 							<p>GOOD FOOD
 								DELIVERY MOOD<br /></p>
 							<ul class="actions special">
-								<li><a href="#" class="button primary">SignUp</a></li>
-								<li><a href="#" class="button primary">SignIn</a></li>
+								<li><a href="#" class="button primary">ORDER FOOD</a></li>
+								
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -192,19 +197,7 @@
 						</div>
 					</section>
 
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>WANT YOUR RESTAURANT TO DELIVERY FOOD ONLINE?</h2>
-								<p>Feel free to contact us by fillup our business contact us form</p>
-							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">CONTACT US</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
+			
 
 				<!-- Footer -->
 					<footer id="footer">

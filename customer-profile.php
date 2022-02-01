@@ -1,3 +1,7 @@
+<?php 
+session_start();
+include('session_check.php');
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -38,7 +42,7 @@
                
                 
                 </div>
-                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Edit Profile</button></div>
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button"><a href="customer-profile-edit.php" style="color:white; text-decoration:none;">Edit Profile</a></button></div>
             </div>
         </div>
        
