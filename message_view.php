@@ -1,4 +1,7 @@
-
+<?php 
+session_start();
+include('session_check.php');
+?>
 <?php 
 $id=$_GET['id'];
 $conn=mysqli_connect('localhost','root','','ccjitterss');

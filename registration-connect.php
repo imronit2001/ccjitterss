@@ -34,7 +34,7 @@ else
 else{
     echo ' <script type="text/javascript">
     alert("Connection Error :)");
-    location="index23.php";
+    location="index2.php";
     </script>'; 
 }
 ?>

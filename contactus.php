@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">CC JITTERSS/a></h1>
+						<h1><a href="index2.html">CC JITTERSS</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">

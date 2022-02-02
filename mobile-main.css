@@ -2,3 +2,12 @@
 {
     padding-left:-300px;
 }
+
+body {
+    background: #2e3842;
+    background-image: url("../css/images/env.jpeg");
+    height: 10%;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}

@@ -16,7 +16,7 @@ if(mysqli_num_rows($query))
     else if($res['Name']=='employee' && $res['password']=="ccjitterssemployee2022")
     header("location:employee.php?msg=done");
     if($pass_check==1)
-    header("location:welcome2.php?msg=done");
+    header("location:welcome2.php?");
 }
 else
 {

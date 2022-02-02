@@ -12,10 +12,10 @@
   </head>
   <body>
   <div class="card">
-    <div class="text-center intro"> <img src="https://i.imgur.com/uNiv4bD.png" width="160"> <span class="d-block account">Don't have account yet?</span> <span class="contact">Contact us at <a href="" class="mail">contact@bbbootstrap.com</a> and <br> we will take care of everything</span> </div>
+    <div class="text-center intro"> <img src="https://i.imgur.com/uNiv4bD.png" width="160"> <span class="d-block account"></span> <span class="contact"> <a href="" class="mail"></a>  <br> </span> </div>
     <div class="mt-4 text-center">
 
-        <h4>Log In.</h4> <span>Login with your admin credentials</span>
+        <h4>Log In.</h4> <span>Login with your credentials</span>
         <form action="login-submit.php" method="post">
         <div class="mt-3 inputbox"> <input type="text" class="form-control" name="email" placeholder="Email"> <i class="fa fa-user"></i> </div>
         <div class="inputbox"> <input type="text" class="form-control" name="password" placeholder="Password"> <i class="fa fa-lock"></i> </div>

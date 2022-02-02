@@ -30,7 +30,7 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index2.php" style="color:red;">Home</a></li>
-											<li><a href="generic.html">Food Ordering</a></li>
+											<li><a href="login.php">Food Ordering</a></li>
 											<li><a href="contactus.php">Contact Us</a></li>
 											<li><a href="upd/CCJITTERSS MENU BOOK (2).pdf" DOWNLOAD="CCJITTERSS MENU BOOK">Menus</a></li>
 											<li><a href="#">About Us</a></li>
@@ -51,7 +51,7 @@
 								DELIVERY MOOD<br /></p>
 							<ul class="actions special">
 								<li><a href="registration.php" class="button primary">SignUp</a></li>
-								<li><a href="#" class="button primary">SignIn</a></li>
+								<li><a href="login.php" class="button primary">SignIn</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -201,7 +201,7 @@
 								<p>Feel free to contact us by fillup our business contact us form</p>
 							</header>
 							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">CONTACT US</a></li>
+								<li><a href="contactus.php" class="button fit primary">CONTACT US</a></li>
 								<li><a href="#" class="button fit">Learn More</a></li>
 							</ul>
 						</div>
