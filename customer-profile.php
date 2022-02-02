@@ -1,7 +1,6 @@
 <?php 
 session_start();
 include('session_check.php');
-<<<<<<< HEAD
 $r=$_SESSION['bio']['id'];
 ?>
 <?php 
@@ -9,8 +8,6 @@ include 'connection.php';
 $q="select * from registration where id='$r'";
 $x=mysqli_query($conn,$q);
 $k=mysqli_fetch_array($x);
-=======
->>>>>>> 411d6745efc0bd0f80b2f9f14b93640f6fdf702b
 ?>
 <!doctype html>
 <html lang="en">
@@ -29,7 +26,7 @@ $k=mysqli_fetch_array($x);
   <div class="container rounded bg-white mt-5 mb-5">
     <div class="row">
         <div class="col-md-3 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="data:profile-logo/jpg;charset=utf8;base64,<?php echo base64_encode($k['file']); ?>"><span class="font-weight-bold"><?php echo  $k['Name']; ?></span><span class="text-black-50">CUSTOMER ID:CC000<?php echo  $k['id']; ?></span><span> </span></div>
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"> <?php echo "<img src='profile-logo/".$k['file']."' >";  ?> <span class="font-weight-bold"><?php echo  $k['Name']; ?></span><span class="text-black-50">CUSTOMER ID:CC000<?php echo  $k['id']; ?></span><span> </span></div>
         </div>
         <div class="col-md-5 border-right">
             <div class="p-3 py-5">

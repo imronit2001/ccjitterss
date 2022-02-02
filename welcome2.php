@@ -1,10 +1,7 @@
 <?php 
 session_start();
 include('session_check.php');
-<<<<<<< HEAD
 $r=$_SESSION['bio']['id'];
-=======
->>>>>>> 411d6745efc0bd0f80b2f9f14b93640f6fdf702b
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -41,11 +38,7 @@ $r=$_SESSION['bio']['id'];
 											<li><a href="#">Food Ordering</a></li>
 											<li><a href="upd/CCJITTERSS MENU BOOK (2).pdf" DOWNLOAD="CCJITTERSS MENU BOOK">Menus</a></li>
 											<li><a href="feedback.php">Feedback/Complain</a></li>
-<<<<<<< HEAD
 											<li><a href="customer-profile.php?">Profile Settings</a></li>
-=======
-											<li><a href="customer-profile.php">Profile Settings</a></li>
->>>>>>> 411d6745efc0bd0f80b2f9f14b93640f6fdf702b
                                             <li><a href="logout.php">Logout</a></li>
 										</ul>
 									</div>
