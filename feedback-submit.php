@@ -4,7 +4,7 @@ include('session_check.php');
 ?>
 <?php
 include 'connection.php';
-$id=['id'];
+$id=$_SESSION['bio']['id'];
 $food=$_POST['fq_name'];
 $msg=$_POST['fq_msg'];
 $q="INSERT INTO feedback(id,food,message) VALUES('$id','$food','$msg');";

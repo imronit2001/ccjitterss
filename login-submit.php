@@ -11,7 +11,7 @@ $pass_check=password_verify($password,$res['password']);
 $_SESSION['bio']=$res;
 if(mysqli_num_rows($query))
 {
-    if($res['Name']=='admin' && $res['password']=="admin")
+    if($res['Name']=='admin' && $res['password']=="admin@ccjitterss2022")
     header("location:Admin.php?msg=done");
     else if($res['Name']=='employee' && $res['password']=="ccjitterssemployee2022")
     header("location:employee.php?msg=done");
