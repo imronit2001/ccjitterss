@@ -1,6 +1,7 @@
 <?php 
 session_start();
 include('session_check.php');
+<<<<<<< HEAD
 $r=$_SESSION['bio']['id'];
 ?>
 <?php 
@@ -8,6 +9,8 @@ include 'connection.php';
 $q="select * from registration where id='$r'";
 $x=mysqli_query($conn,$q);
 $k=mysqli_fetch_array($x);
+=======
+>>>>>>> 411d6745efc0bd0f80b2f9f14b93640f6fdf702b
 ?>
 <!doctype html>
 <html lang="en">
