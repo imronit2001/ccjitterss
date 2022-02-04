@@ -58,7 +58,7 @@
                             <div class="mt-3 px-3"> <input class="form-control" type="text" placeholder="State" name="State" required> </div>
                             <div class="mt-3 px-3"> <input class="form-control" type="password" placeholder="Password" name="password" required> </div>
                             <div class="mt-3 px-3">   <input type="file" name="photo1" class="form-control" placeholder="Photo"> </div>
-                           
+                            <input type="hidden" name="usertype" value="user">
                            
                             <div class="mt-3 d-grid px-3"> <button type="submit"
                                     class="btn btn-primary btn-block btn-signup text-uppercase"> <span>Register</span>

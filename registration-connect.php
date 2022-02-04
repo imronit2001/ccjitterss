@@ -12,29 +12,29 @@ $password=$_POST['password'];
 $password_enc=password_hash($password,PASSWORD_BCRYPT);
 $photo=$_FILES["photo1"]["name"];
 $images="profile-logo/".$photo;
-
-$q="INSERT INTO `registration`(`Name`, `Email`, `Phone`, `Address`, `City`, `State`, `password`, `file`) VALUES ('$name','$email_id','$phone','$address','$city','$state','$password_enc','$images')";
+$usertype=$_POST['usertype'];
+$q="INSERT INTO `registration`(`Name`, `Email`, `Phone`, `Address`, `City`, `State`, `password`, `file`, `usertype`) VALUES ('$name','$email_id','$phone','$address','$city','$state','$password_enc','$images','$usertype')";
 $r=mysqli_query($conn,$q);
 if($r==1)
 {
     move_uploaded_file($_FILES['photo1']['tmp_name'],$images);
     echo ' <script type="text/javascript">
     alert("Registration Successfull!! :)");
-    location="index2.php";
+    history.back();
     </script>'; 
 }
 else
 {
     echo ' <script type="text/javascript">
     alert("Registration Failed :( ");
-    location="index2.php";
+    history.back();
     </script>'; 
 }
 }
 else{
     echo ' <script type="text/javascript">
     alert("Connection Error :)");
-    location="index2.php";
+    history.back();
     </script>'; 
 }
 ?>

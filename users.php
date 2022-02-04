@@ -23,8 +23,10 @@ $y=(int)(((int)$r[0]/30)*100);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Admin</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body style="width:100%;">
 
   <div>
     <div class="d-flex flex-row">
@@ -36,8 +38,53 @@ $y=(int)(((int)$r[0]/30)*100);
             </div>
         </div>
         <div class="col-md-9">
-            
-            <div class="card card2 p-3">
+            <div id="nav-btn">
+                <button type="button" id="users" onclick="users();" class="btn btn-primary">Users</button>
+                <button type="button" id="employee" onclick="employee();" class="btn btn-primary">Employees</button>
+                <button type="button" id="add-employee" onclick="add_employee();" class="btn btn-primary">Add Employee</button>
+            </div>
+            <div id="change-users" style="overflow-x:auto; overflow-y:auto;">
+                <?php
+                    include 'connection.php';
+                    $q="select * from registration";
+                    $query=mysqli_query($conn,$q);
+                ?>
+                <h2>All Registered Users</h2>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            if(mysqli_num_rows($query)>0){
+                                $n=1;
+                                while($row=mysqli_fetch_assoc($query)){
+                        ?>
+                                    <tr>
+                                    <th scope="row"><?php echo $n; ?></th>
+                                    <td><?php echo $row['Name']; ?></td>
+                                    <td><?php echo $row['Email']; ?></td>
+                                    <td><?php echo $row['Phone']; ?></td>
+                                    <td><a href="delete-users.php?id=<?php echo $row['id'];?>"><button type="button" class="btn btn-danger">Remove</button></a></td>
+                                    </tr>
+                        <?php
+                                    $n=$n+1;
+                                }
+                        ?>
+                    </tbody>
+                    <?php
+                        }
+                        else
+                            echo "No Data Found";
+                    ?>
+                </table>
+            </div>
+            <!-- <div class="card card2 p-3">
                 <div class="hello d-flex justify-content-end align-items-center mt-3"> <span>Welcome Director</span> </div>
                 <div style="margin-top:20%; margin-left:5%;">
                 <div class="d-flex flex-row gap-3">
@@ -75,7 +122,7 @@ $y=(int)(((int)$r[0]/30)*100);
                     </div>
 
                 </div>
-            </div>
+            </div> -->
                 <div class="d-flex justify-content-center mt-5 gap-2 p-3">
                    
                 </div>
@@ -83,7 +130,38 @@ $y=(int)(((int)$r[0]/30)*100);
         </div>
     </div>
 </div>
+    <script>
+        function users(){
+            $.ajax({
+              type:'post',
+              url: 'customer-list.php',
+              success : function(data){
+                $('#change-users').html(data);
+              }
 
+            })
+        }
+        function employee(){
+            $.ajax({
+              type:'post',
+              url: 'employee-list.php',
+              success : function(data){
+                $('#change-users').html(data);
+              }
+
+            })
+        }
+        function add_employee(){
+            $.ajax({
+              type:'post',
+              url: 'add-employee.php',
+              success : function(data){
+                $('#change-users').html(data);
+              }
+
+            })
+        }
+    </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

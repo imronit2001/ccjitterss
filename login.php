@@ -18,7 +18,7 @@
         <h4>Log In.</h4> <span>Login with your credentials</span>
         <form action="login-submit.php" method="post">
         <div class="mt-3 inputbox"> <input type="text" class="form-control" name="email" placeholder="Email"> <i class="fa fa-user"></i> </div>
-        <div class="inputbox"> <input type="text" class="form-control" name="password" placeholder="Password"> <i class="fa fa-lock"></i> </div>
+        <div class="inputbox"> <input type="password" class="form-control" name="password" placeholder="Password"> <i class="fa fa-lock"></i> </div>
     </div>
     <div class="d-flex justify-content-between">
         <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> Keep me Logged in </label> </div>

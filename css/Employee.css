@@ -229,3 +229,12 @@ body {
 .btn2:hover {
     background-color: #f8c01a;
 }
+
+#nav-btn{
+    display: flex;
+    padding: 10px;
+    
+}
+#nav-btn button{
+    margin: 2px 10px;
+}
